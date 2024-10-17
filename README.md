@@ -1,9 +1,8 @@
 
 # RetinaDA
 
-## Project Overview
-
-This project aims to process image files to generate usable patches; perform a series of image processing operations on images, including rotation, flipping, and cropping. The processed images will be saved in the specified output directory.
+- This project aims to process image files to generate usable patches.
+- The method is to rotate, flip, and crop the input images.
 
 ## Feature Description
 
