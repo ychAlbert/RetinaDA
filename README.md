@@ -19,8 +19,8 @@ This directory contains the code, file of outputs, and documentation for image p
 
 ### Files
 
-- [LICENSE](./LICENSE/): Specify the usage permissions of developers or organizations using the code
-- [README.md](./README.md/): Contains a basic introduction to this project 
+- [LICENSE](./LICENSE/): Specify the usage permissions of developers or organizations using the code.
+- [README.md](./README.md/): Contains a basic introduction to this project.
 - [Sub_image.py](./Sub_image.py/): Process image files to generate usable patches.
 ### Subfolders
 
