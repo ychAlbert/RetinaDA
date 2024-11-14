@@ -138,7 +138,7 @@ for iteration in range(execution_count):
             image_path2 = convert_to_png(image_path2, output_dir2)
 
         center = centers[file_name]
-        for i in range(20):
+        for i in range(20): 
             center = centers[file_name]
             seed = hash(file_name) + i  # Increase the random seed
             process_image(image_path1, output_dir1, center, seed, size_range)
