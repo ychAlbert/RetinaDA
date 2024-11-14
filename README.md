@@ -1,3 +1,4 @@
+
 # RetinaDA
 
 ## Project Overview
@@ -8,19 +9,19 @@ This project aims to process image files to generate usable patches; perform a s
 
 1. **Format Conversion**: Convert images from GIF or TIF formats to PNG format.
 2. **Image Processing**:
-  * Rotation: Randomly rotate images by 0 to 360 degrees.
-  * Flipping: Randomly decide whether to flip the image along the vertical axis.
-  * Cropping: Randomly crop the image based on the center point of the image.
+   - Rotation: Randomly rotate images by 0 to 360 degrees.
+   - Flipping: Randomly decide whether to flip the image along the vertical axis.
+   - Cropping: Randomly crop the image based on the center point of the image.
 
 ## Usage Instructions
 
 ### Environment Requirements
 
-* Python 3.x
-* NumPy
-* OpenCV
-* Pillow
-* cv2
+- Python 3.x
+- NumPy
+- OpenCV
+- Pillow
+- cv2
 
 ### Steps to Run
 
@@ -30,38 +31,55 @@ This project aims to process image files to generate usable patches; perform a s
 
 ### Code Structure
 
-* `convert_to_png`: Convert GIF or TIF format images to PNG format.
-* `is_convertible`: Check if the image is in GIF or TIF format.
-* `process_image`: Perform rotation, flipping, and cropping on the image.
-* `get_file_name_without_extension`: Get the file name without the extension.
-* `files1` and `files2`: Construct dictionaries containing file names and paths.
-* `centers`: Store the center coordinates of each image.
-* `common_files`: Obtain the common file names in two input directories.
+- `convert_to_png`: Convert GIF or TIF format images to PNG format.
+- `is_convertible`: Check if the image is in GIF or TIF format.
+- `process_image`: Perform rotation, flipping, and cropping on the image.
+- `get_file_name_without_extension`: Get the file name without the extension.
+- `files1` and `files2`: Construct dictionaries containing file names and paths.
+- `centers`: Store the center coordinates of each image.
+- `common_files`: Obtain the common file names in two input directories.
 
 ### Parameter Description
 
-* `execution_count`: The number of times the image processing is executed.
-* `current_index`: Used to name the output directory.
-* `photo_index`: Used to name the output files.
-* `size_range`: The minimum and maximum size range for cropping images.
+- `execution_count`: The number of times the image processing is executed.
+- `current_index`: Used to name the output directory.
+- `photo_index`: Used to name the output files.
+- `size_range`: The minimum and maximum size range for cropping images.
 
 ## Output Directory Structure
 
 The output directory is named in the format `YourImagePath\YourImageName_{current_index}`, where `current_index` will be counted automatically, and the patches generated from the same original image will be numbered. Each output directory will contain the processed images.
 
 ## Result Dataset
+The data structure should be like this:
 
-The data structure should be like this: /Retina /CHASDB /1st_manual /Image_01L_1 /Image_01L_2 ... /images ... /DRIVE /1st_manual ... /images ... ...
+	/Retina
+		/CHASDB
+			/1st_manual
+				/Image_01L_1
+				/Image_01L_2
+				...
+			/images
+				...
+		/DRIVE
+			/1st_manual
+			    ...
+			/images
+				...
+		... 
+
+
+
 
 ## Precautions
 
-* Ensure that the image formats in the input directory are correct and that the output directory has enough space to store the processed images.
-* Replace `YourImagePath` and `YourImageName` in the script with the actual path and name.
-* Adjust `size_range` and `execution_count` in the script as needed.
+- Ensure that the image formats in the input directory are correct and that the output directory has enough space to store the processed images.
+- Replace `YourImagePath` and `YourImageName` in the script with the actual path and name.
+- Adjust `size_range` and `execution_count` in the script as needed.
 
 ## Version History
 
-* Initial version: October 17, 2024
+- Initial version: October 17, 2024
 
 ## Contact Information
 
