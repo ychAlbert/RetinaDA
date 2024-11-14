@@ -158,4 +158,4 @@ for iteration in range(execution_count):
     
     # Update the crop size range
     size_range[0] += 50
-    size_range[1] += 50
+    size_range[1] += 50 
