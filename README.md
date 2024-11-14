@@ -13,6 +13,20 @@ This project aims to process image files to generate usable patches; perform a s
    - Flipping: Randomly decide whether to flip the image along the vertical axis.
    - Cropping: Randomly crop the image based on the center point of the image.
 
+## Source Directory
+
+This directory contains the code, file of outputs, and documentation for image processing.
+
+### Files
+
+- [LICENSE](./LICENSE/): Specify the usage permissions of developers or organizations using the code
+- [README.md](./README.md/): Contains a basic introduction to this project 
+- [Sub_image.py](./Sub_image.py/): Process image files to generate usable patches.
+### Subfolders
+
+- [RentinaDA](./RentinaDA/): Contains the processed images.
+
+
 ## Usage Instructions
 
 ### Environment Requirements
