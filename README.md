@@ -73,7 +73,7 @@ RetinaDA/
 1. 克隆仓库：
 
 ```bash
-git clone https://github.com/yourusername/RetinaDA.git
+git clone https://github.com/ychAlbert/RetinaDA.git
 cd RetinaDA
 ```
 
